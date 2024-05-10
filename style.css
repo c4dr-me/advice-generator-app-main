@@ -48,6 +48,11 @@ main {
     font-size: 0.7rem;
     margin-top: 2rem;
     letter-spacing: 0.3rem;
+    display: inline-block;
+}
+
+.advice figcaption {
+    display: inline-block;
 }
 
 .divisor {
@@ -84,6 +89,11 @@ main {
 .diceContainer:hover {
     box-shadow: 0 0 40px 3px hsl(150, 100%, 66%);
     animation: animate 2s linear;
+}
+
+button {
+    border: 0;
+    border-radius: 2rem;
 }
 
 @keyframes animate {

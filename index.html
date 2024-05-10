@@ -3,17 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Advice generator app</title>
-
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,8 +21,11 @@
   <body>
     <main>
       <div class="container">
-        <p class="advice">ADVICE #<span id="adviceId"></span></p>
-        <p id="adviceQuote">"<span id="quote"></span>"</p>
+        <h1 class="advice">
+          Advice #
+          <figcaption id="adviceId"></figcaption>
+        </h1>
+        <blockquote id="adviceQuote"><span id="quote"></span></blockquote>
         <img
           src="./images/pattern-divider-desktop.svg"
           alt="divisor"
@@ -39,7 +38,9 @@
         />
       </div>
       <div class="diceContainer">
-        <img src="./images/icon-dice.svg" alt="dice" />
+        <button aria-label="Generate Advice">
+          <img src="./images/icon-dice.svg" alt="dice" />
+        </button>
       </div>
     </main>
     <footer>
@@ -50,6 +51,6 @@
         >. Coded by <a href="https://github.com/c4dr-me">c4dr-me</a>.
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
