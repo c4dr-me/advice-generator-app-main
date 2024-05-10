@@ -1,0 +1,135 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    flex-direction: column;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    height: 100vh;
+}
+
+main {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 27rem;
+    height: 17rem;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 1s ease-in-out;
+}
+
+.advice {
+    color: hsl(150, 100%, 66%);
+    font-size: 0.7rem;
+    margin-top: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+.divisor {
+    width: 82%;
+    margin: 0 auto 3rem auto;
+}
+
+#adviceQuote {
+    color: white;
+    font-size: 1.75rem;
+    padding: 1rem 2rem;
+}
+
+.diceContainer {
+    margin-top: -1.6rem;
+    background-color: hsl(150, 100%, 66%);
+    height: 3.25rem;
+    width: 3.25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.diceContainer>img {
+    width: 41%;
+    height: 41%;
+}
+
+
+.diceContainer:hover {
+    box-shadow: 0 0 40px 3px hsl(150, 100%, 66%);
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+.attribution {
+    text-align: center;
+    color: hsl(217, 19%, 38%)
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:768px) {
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        width: 90%;
+        height: 60%;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
