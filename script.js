@@ -9,3 +9,4 @@ const adviceGen = async () => {
 const diceButton = document.querySelector('.diceContainer').addEventListener("click", () => {
     adviceGen();
 })
+adviceGen();

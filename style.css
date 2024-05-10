@@ -32,7 +32,7 @@ main {
 
 .container {
     width: 27rem;
-    height: 17rem;
+    min-height: 17rem;
     background-color: hsl(217, 19%, 24%);
     border-radius: 1rem;
     text-align: center;
@@ -40,6 +40,7 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     transition: all 1s ease-in-out;
+    overflow: hidden;
 }
 
 .advice {
@@ -58,6 +59,7 @@ main {
     color: white;
     font-size: 1.75rem;
     padding: 1rem 2rem;
+    overflow-wrap: break-word;
 }
 
 .diceContainer {
@@ -81,7 +83,7 @@ main {
 
 .diceContainer:hover {
     box-shadow: 0 0 40px 3px hsl(150, 100%, 66%);
-    animation: animate 2s linear infinite;
+    animation: animate 2s linear;
 }
 
 @keyframes animate {
@@ -122,7 +124,6 @@ footer {
 @media screen and (max-width:767px) {
     .container {
         width: 90%;
-        height: 60%;
     }
 
     .mobile {
